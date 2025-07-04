@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MyMobile Plans</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #00b4db, #0083b0);
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: white;
+      padding: 20px 40px;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      color: #007bff;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .plans {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .plan {
+      background-color: white;
+      border-radius: 10px;
+      padding: 25px;
+      width: 280px;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .plan:hover {
+      transform: scale(1.03);
+    }
+
+    .plan h2 {
+      color: #007bff;
+      margin-top: 0;
+    }
+
+    .price {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+
+    .features {
+      list-style: none;
+      padding: 0;
+    }
+
+    .features li {
+      padding: 6px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    footer {
+      text-align: center;
+      color: #ddd;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>MyMobile – Choose Your Plan</h1>
+</header>
+
+<div class="container">
+  <div class="plans">
+    <div class="plan">
+      <h2>Basic Line</h2>
+      <div class="price">$9.99 / month</div>
+      <ul class="features">
+        <li>2GB Data</li>
+        <li>100 Minutes</li>
+        <li>No SMS</li>
+        <li>3G Network</li>
+      </ul>
+    </div>
+
+    <div class="plan">
+      <h2>Standard Plan</h2>
+      <div class="price">$19.99 / month</div>
+      <ul class="features">
+        <li>10GB Data</li>
+        <li>500 Minutes</li>
+        <li>Unlimited SMS</li>
+        <li>4G Coverage</li>
+      </ul>
+    </div>
+
+    <div class="plan">
+      <h2>Unlimited Max</h2>
+      <div class="price">$34.99 / month</div>
+      <ul class="features">
+        <li>Unlimited Data</li>
+        <li>Unlimited Calls</li>
+        <li>Unlimited SMS</li>
+        <li>5G Enabled</li>
+      </ul>
+    </div>
+
+    <div class="plan">
+      <h2>Traveler Plan</h2>
+      <div class="price">$24.99 / month</div>
+      <ul class="features">
+        <li>15GB Data</li>
+        <li>Roaming in 20+ countries</li>
+        <li>300 Minutes</li>
+        <li>Unlimited SMS</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<footer>
+  MyMobile &copy; 2025 – This is a mock page for training purposes.
+
+</footer>
+
+</body>
+</html>

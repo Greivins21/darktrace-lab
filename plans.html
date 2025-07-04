@@ -77,6 +77,11 @@
       font-size: 0.9em;
     }
   </style>
+  <script>
+  function goToLogin() {
+    window.location.href = "login.html";
+  }
+</script>
 </head>
 <body>
 
@@ -86,7 +91,7 @@
 
 <div class="container">
   <div class="plans">
-    <div class="plan">
+    <div class="plan" onclick="goToLogin()" style="cursor: pointer;">
       <h2>Basic Line</h2>
       <div class="price">$9.99 / month</div>
       <ul class="features">
@@ -97,7 +102,7 @@
       </ul>
     </div>
 
-    <div class="plan">
+    <div class="plan" onclick="goToLogin()" style="cursor: pointer;">
       <h2>Standard Plan</h2>
       <div class="price">$19.99 / month</div>
       <ul class="features">
@@ -108,7 +113,7 @@
       </ul>
     </div>
 
-    <div class="plan">
+    <div class="plan" onclick="goToLogin()" style="cursor: pointer;">
       <h2>Unlimited Max</h2>
       <div class="price">$34.99 / month</div>
       <ul class="features">
@@ -119,7 +124,7 @@
       </ul>
     </div>
 
-    <div class="plan">
+    <div class="plan" onclick="goToLogin()" style="cursor: pointer;">
       <h2>Traveler Plan</h2>
       <div class="price">$24.99 / month</div>
       <ul class="features">
@@ -136,6 +141,6 @@
   MyMobile &copy; 2025 – This is a mock page for training purposes.
 
 </footer>
-
+<!-- m1t5_aR -->
 </body>
 </html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MyMobile - Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #007bff, #00c6ff);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.2);
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: bold;
+      font-size: 1.3em;
+      cursor: default;
+    }
+    .logo svg {
+      width: 32px;
+      height: 32px;
+      fill: white;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      border: 2px solid white;
+      padding: 8px 15px;
+      border-radius: 6px;
+      transition: background-color 0.3s, color 0.3s;
+      margin-left: 12px;
+    }
+    nav a:hover, nav a:focus {
+      background-color: white;
+      color: #007bff;
+      outline: none;
+    }
+    nav a.active {
+      background-color: white;
+      color: #007bff;
+      cursor: default;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      margin-bottom: 30px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.25em;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    }
+    p.description {
+      font-size: 1.2em;
+      max-width: 600px;
+      color: #e0e0e0;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo" aria-label="MyMobile Logo">
+    <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+      <rect x="10" y="40" width="8" height="14" />
+      <rect x="22" y="32" width="8" height="22" />
+      <rect x="34" y="24" width="8" height="30" />
+      <rect x="46" y="16" width="8" height="38" />
+    </svg>
+    MyMobile
+  </div>
+  <nav>
+    <a href="index.html" class="active" aria-current="page">Home</a>
+    <a href="plans.html">Plans</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<main>
+  <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Happy family using phones" />
+  <h1>Connecting Families Everywhere</h1>
+  <p class="description">
+    At MyMobile, we believe in bringing people together through reliable and affordable communication services.
+    Whether you’re calling loved ones or streaming your favorite shows, we’ve got you covered with the best network experience.
+    Explore our plans and find the perfect fit for your needs.
+  </p>
+</main>
+
+</body>
+</html>

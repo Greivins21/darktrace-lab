@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MyMobile - Billing</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #232526, #414345);
+      margin: 0;
+      padding: 0;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .billing-box {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+      width: 360px;
+    }
+
+    h2 {
+      color: #007bff;
+      margin-top: 0;
+      text-align: center;
+    }
+
+    input[type="text"], input[type="number"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+
+    .flex {
+      display: flex;
+      gap: 10px;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      background-color: #007bff;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .disclaimer {
+      margin-top: 20px;
+      font-size: 0.85em;
+      text-align: center;
+      color: #888;
+    }
+  </style>
+  <script>
+  function redirectToPurchase(event) {
+    event.preventDefault(); 
+    window.location.href = "purchase.html"; 
+  }
+</script>
+</head>
+<body>
+
+  <div class="billing-box">
+    <h2>Payment Details</h2>
+    <form onsubmit="redirectToPurchase(event)">
+      <input type="text" name="name" placeholder="Cardholder Name" required />
+      <input type="text" name="cardnumber" placeholder="Card Number (XXXX XXXX XXXX XXXX)" maxlength="19" required />
+      
+      <div class="flex">
+        <input type="text" name="expiry" placeholder="MM/YY" maxlength="5" required />
+        <input type="text" name="cvv" placeholder="CVV" maxlength="4" required />
+      </div>
+      
+      <button type="submit">Pay Now</button>
+    </form>
+    <div class="disclaimer">
+      Your information is encrypted and secure.
+    </div>
+  </div>
+<!-- v4nt} -->
+
+</body>
+</html>

